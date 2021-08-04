@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import React,{ useContext, useState } from 'react'
 import SKUColorMapContext from '../../context/SKUColorMapContext'
 import ControlContext from '../../context/ControlContext'
 import './style.css'
