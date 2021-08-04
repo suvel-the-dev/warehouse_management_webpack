@@ -2,7 +2,7 @@ import {
     scale,
     palletObject
 } from '../../constant';
-import React,{ useContext } from 'react'
+import React, { useContext } from 'react'
 import ControlContext from '../../context/ControlContext'
 import UtilizationContext from '../../context/UtilizationContext'
 const palletDimension = palletObject.dim;
@@ -33,26 +33,12 @@ const Space = ({
             ]}
         >
             <boxGeometry />
-            {
-                (control?.utilization) ?
-                    (
-                        <meshBasicMaterial
-                            opacity={0.3}
-                            transparent={true}
-                            color={getUtilization(utilization)}
-                            wireframe={false}
-                        />
-                    )
-                    :
-                    (
-                        <meshStandardMaterial
-                            opacity={control?.componentOpacity}
-                            transparent={true}
-                            color={'#fff'}
-                            wireframe={true}
-                        />
-                    )
-            }
+            <meshStandardMaterial
+                opacity={control?.componentOpacity}
+                transparent={true}
+                color={'#fff'}
+                wireframe={true}
+            />
         </mesh>
     )
 };

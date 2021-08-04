@@ -5,7 +5,7 @@ import {
 import * as THREE from 'three'
 import { useLoader } from '@react-three/fiber'
 import rackBaseTexture from '../../asset/texture/rack_base_2.jpg';
-import React,{ useContext } from 'react'
+import React, { useContext } from 'react'
 import UtilizationContext from '../../context/UtilizationContext'
 import ControlContext from '../../context/ControlContext'
 const rackBasePadding = rackBaseObject.padding;
@@ -40,27 +40,13 @@ const RackBase = ({
             scale={[(dim.width + rackBasePadding) * scale, (dim.height) * scale, (dim.depth + rackBasePadding) * scale]}
         >
             <boxGeometry />
-            {
-                control?.utilization ?
-                    (
-                        <meshBasicMaterial
-                            opacity={0.8}
-                            transparent={true}
-                            color={getUtilization(utilization)}
-                            wireframe={false}
-                        />
-                    )
-                    :
-                    (
-                        <meshStandardMaterial
-                            map={texture}
-                            attach="material"
-                            reflectivity={1}
-                            opacity={control?.componentOpacity}
-                            transparent={true}
-                        />
-                    )
-            }
+            <meshStandardMaterial
+                map={texture}
+                attach="material"
+                reflectivity={1}
+                opacity={control?.componentOpacity}
+                transparent={true}
+            />
         </mesh >
     )
 }
