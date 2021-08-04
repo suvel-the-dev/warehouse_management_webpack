@@ -1,0 +1,38 @@
+.workspace-filter-form__container {
+  height: 100%;
+}
+
+.workspace-filter-form__container span {
+  color: red;
+}
+
+.workspace-filter-form__container .form-ip {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.workspace-filter-form__header {
+  color: #d40511;
+  font-weight: bold;
+  margin-top: 7.5px;
+  display: block;
+  text-align: left;
+}
+
+.workspace-filter-form__row {
+  display: flex;
+}
+
+.workspace-filter-form__action-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+}
+
+.workspace-filter-form__utilization {
+  display: flex;
+}
+
+.utilization__select {
+  margin-left: 10px;
+}
