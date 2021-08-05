@@ -12,7 +12,7 @@
 
 .main-area {
   grid-area: main-area;
-  background-image: url("../../asset/bg_img/istockphoto-893494012-1024x1024\ 1.png");
+  /* background-image: url("../../asset/bg_img/istockphoto-893494012-1024x1024\ 1.png"); */
   background-size: inherit;
   background-position: center;
   background-blend-mode: luminosity;
@@ -46,7 +46,7 @@
 .brand-logo-md {
   width: 276px;
   height: 80px;
-  background-image: url("../../asset/band/logo-md.png");
+  /* background-image: url("../../asset/band/logo-md.png"); */
   background-repeat: no-repeat;
   margin-top: 30px;
 }
